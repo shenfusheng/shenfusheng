@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-    </head>
-    <body>
-    	<h1>title</h1>
-    	<footer>我是footer</footer>
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<title>这是一个最最普通的演示</title>
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
+	<!-- <script src="../hotcss.js"></script> -->
+	<script>
+	    function a() {
+	            document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + "px";
+	            document.getElementsByTagName("html")[0].style.height = "auto";
+	    }
+	    var b = null;
+	    window.addEventListener("resize", function() {
+	        clearTimeout(b), b = setTimeout(a, 1)
+	    }, !1), a();
+	</script>
+	<style>
+		body{margin: 0;padding: 0;}
+		#header{ height: 0.88rem; line-height: 0.88rem; text-align: center; background: #33aa33; font-size: 0.48rem; color: #fff; }
+	}
+	</style>
+</head>
+<body>
+	<div id="header">普通的演示</div>
+</body>
 </html>
